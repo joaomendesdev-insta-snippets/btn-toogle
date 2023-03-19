@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="main-btn" onclick="toogleMenu()">
+        <img src="./icons/home.svg" />
+        <div id="inner-btn1">
+            <img src="./icons/play.svg" />
+        </div>
+        <div id="inner-btn2">
+            <img src="./icons/cart.svg" />
+        </div>
+        <div id="inner-btn3">
+            <img src="./icons/settings.svg" />
+        </div>
+    </div>
+</body>
+
+<script>
+    var count = 0
+    function toogleMenu() {
+        if (count % 2 === 0) {
+            document.getElementById('inner-btn1').style.left = '150%'
+            setTimeout(() => {
+                document.getElementById('inner-btn2').style.left = '300%'
+            }, 300)
+            setTimeout(() => {
+                document.getElementById('inner-btn3').style.left = '450%'
+            }, 600)
+        } else {
+            document.getElementById('inner-btn1').style.left = '0'
+
+            setTimeout(() => {
+                document.getElementById('inner-btn2').style.left = '0'
+            }, 300)
+            setTimeout(() => {
+                document.getElementById('inner-btn3').style.left = '0'
+            }, 600)
+        }
+        count++
+    }
+</script>
