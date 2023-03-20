@@ -19,7 +19,7 @@ body {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    background: linear-gradient(to right, #ffc70a, #e42ab8);
+    background: linear-gradient(to right, #fbc30b, #e42ab8);
     position: relative;
     display: flex;
     justify-content: center;
